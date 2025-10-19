@@ -1,0 +1,117 @@
+Created from template: |append [ot_log-%y-%m-%d_%H_%M_%s.log] 
+Number of records: 100000
+Lifetime: unlimited
+Log format:
+date time severity {session id} <category> [source]
+label: message
+===================================================
+
+2025-Sep-30 09:01:59.132 ALW {N/A} <N/A> [OptimComponents Core]
+========== Log start ==========
+
+2025-Sep-30 09:01:59.132 INFO {N/A} <N/A> [OptimComponents Core]
+Created session with ID 'vxmlDialog_0'.
+
+2025-Sep-30 09:01:59.620 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Preparing document 'file:/C:/Users/01ism/OneDrive/Desktop/TP_Oral/AGENDA_V0/gestion_agenda_v1.vxml'.
+
+2025-Sep-30 09:01:59.633 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Preparing of document 'file:/C:/Users/01ism/OneDrive/Desktop/TP_Oral/AGENDA_V0/gestion_agenda_v1.vxml' completed.
+  result = success
+
+2025-Sep-30 09:01:59.633 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpreting document 'file:/C:/Users/01ism/OneDrive/Desktop/TP_Oral/AGENDA_V0/gestion_agenda_v1.vxml'
+
+2025-Sep-30 09:01:59.642 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpreting <form> with id 'agenda'; line 23; column 1.
+
+2025-Sep-30 09:01:59.642 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpreting <block>; line 40; column 1.
+
+2025-Sep-30 09:01:59.658 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpreting <field> with name 'num_abonne'; line 48; column 1.
+
+2025-Sep-30 09:01:59.717 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Waiting for user's input.
+
+2025-Sep-30 09:02:03.193 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+User's input collection completed.
+
+2025-Sep-30 09:02:03.207 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+The following input was collected:
+  utterance = deux mille
+  confidence = 1
+  mode = voice
+
+2025-Sep-30 09:02:03.207 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpreting <filled>; line 61; column 3.
+
+2025-Sep-30 09:02:03.224 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpreting <field> with name 'confirm'; line 74; column 5.
+
+2025-Sep-30 09:02:03.257 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Waiting for user's input.
+
+2025-Sep-30 09:02:05.462 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+User's input collection completed.
+
+2025-Sep-30 09:02:05.469 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+The following input was collected:
+  utterance = oui
+  confidence = 1
+  mode = voice
+
+2025-Sep-30 09:02:05.469 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpreting <filled>; line 88; column 10.
+
+2025-Sep-30 09:02:05.488 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpreting <block>; line 103; column 1.
+
+2025-Sep-30 09:02:05.554 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpreting <field> with name 'date'; line 109; column 1.
+
+2025-Sep-30 09:02:05.886 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Waiting for user's input.
+
+2025-Sep-30 09:02:13.902 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+An event 'noinput' was added to the event queue
+
+2025-Sep-30 09:02:13.902 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+User's input collection completed.
+
+2025-Sep-30 09:02:13.904 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Processing event 'noinput'.
+  Event origin = document 'file:/C:/Users/01ism/OneDrive/Desktop/TP_Oral/AGENDA_V0/gestion_agenda_v1.vxml'; line 109
+  Handler location = platform default handler
+
+2025-Sep-30 09:02:13.905 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpreting <field> with name 'date'; line 109; column 1.
+
+2025-Sep-30 09:02:13.913 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Waiting for user's input.
+
+2025-Sep-30 09:02:14.031 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+User has been disconnected.
+
+2025-Sep-30 09:02:14.031 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+An event 'connection.disconnect.hangup' was added to the event queue
+
+2025-Sep-30 09:02:14.033 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+User's input collection completed.
+
+2025-Sep-30 09:02:14.033 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Processing event 'connection.disconnect.hangup'.
+  Event origin = document 'file:/C:/Users/01ism/OneDrive/Desktop/TP_Oral/AGENDA_V0/gestion_agenda_v1.vxml'
+  Handler location = platform default handler
+
+2025-Sep-30 09:02:14.043 INFO {vxmlDialog_0} <Interpretation tracking> [VoiceXML interpreter]
+Interpretation finished.
+  value returned by <exit> = 
+{
+}
+  value returned by <disconnect> = 
+undefined
+
+2025-Sep-30 09:02:14.178 INFO {N/A} <N/A> [OptimComponents Core]
+Deleted session with ID 'vxmlDialog_0'.
+

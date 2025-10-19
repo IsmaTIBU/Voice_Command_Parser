@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ATTENTION : UTF-8 = PAS DE CARACTERES ACCENTUES -->
+<!-- si PB message : Invalid UTF-8 character --> 
+
+<vxml version="2.0" xmlns="http://www.w3.org/2001/vxml">
+
+<meta name="description" content="Gestion agenda version 0"/>
+<meta name="author" content="Isabelle Ferrane"/>
+<meta name="copyright" content="IUP SI M2 Pro Dialogue"/>
+
+<!-- Version de base : gestion de dialogue et comprehension -->
+<!-- Demande et verification du numero d'abonne -->
+
+<!-- Activation de la grammaire permettant la detection des -->
+<!-- demandes d'aide formulees par l'utilisateur            -->
+
+<link event="help">
+<grammar src="grammaire_aide.grxml" type="application/srgs+xml" />
+</link>
+
+<link event="exit">
+  <grammar src="grammaire_sortie.grxml" type="application/srgs+xml" />
+</link>
+
+<catch event="exit">
+  <prompt>
+    Vous avez demande a quitter l'application. 
+    Au revoir et a bientot !
+  </prompt>
+  <exit/>
+</catch>
+
+<!-- dialogue de demande d'information -->
+
+<form id="agenda">
+
+<!-- initialisation des variables internes au formulaire -->
+<var name="reponse" />
+<var name="message_confirm" />
+
+<!-- declaration des variables Javascript -->
+<script>
+       <!-- exemple de gestion de la date au format Ecmascript --> 
+       <!-- Date courante -->
+		var now = new Date(2010, 11, 9, 15, 30, 0, 0);
+       <!-- Valeur de la date fournie par l'utilisateur -->
+		var date_choisie = new Date();
+       <!-- Activation/desactivation du mode TRACE -->
+		var mode_trace ="True";
+</script>
+
+<block>
+   	Bienvenue sur le service de gestion de votre agenda. 
+        Aujourd'hui nous sommes le <value expr="now.toString()" />
+   	<!-- affiche le nombre de millisecondes correspondant -->
+   	<value expr="now.valueOf()" />
+</block>
+
+<field name="horaire">
+  <prompt>A quelle heure souhaitez-vous reserver la salle ?</prompt>
+
+  <!-- Utiliser la grammaire horaire au lieu de nombre -->
+  <grammar src="grammaire_horaire.grxml" type="application/srgs+xml" />
+
+  <help>Veuillez indiquer l'heure de réservation. Par exemple : midi, minuit, ou quinze heures</help>
+  
+  <noinput>Je n'ai pas entendu. Pouvez-vous me dire l'heure de réservation ?</noinput>
+  
+  <nomatch>Je n'ai pas compris l'heure. Pouvez-vous répéter ? Par exemple : dix heures, midi...</nomatch>
+
+  <filled>
+    <!-- Afficher le texte reconnu et les valeurs extraites -->
+    Vous souhaitez réserver ce jour la à <value expr="horaire.text"/>.
+    
+    <!-- Mode trace pour vérifier les valeurs -->
+    <if cond="mode_trace=='True'">
+      TRACE Horaire : <value expr="horaire.H"/> heures <value expr="horaire.MN"/> minutes
+      TRACE Total minutes : <value expr="horaire.NTOT_MIN"/>
+    </if>
+  </filled>
+</field>
+
+
+</form>
+</vxml>

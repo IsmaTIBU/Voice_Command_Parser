@@ -1,0 +1,11 @@
+Created from template: |append [ot_log-WARN-%y-%m-%d_%H_%M_%s.log] 
+Number of records: unlimited
+Lifetime: unlimited
+Log format:
+date time severity {session id} <category> [source]
+label: message
+===================================================
+
+2025-Sep-30 09:42:46.384 WARN {vxmlDialog_0} <Alarm> [VoiceXML interpreter]
+optimtalk.interpretationError: An unhandled error event 'error.badfetch' occurred (It will be processed by a default platform error handler). The following message was associated with the event: document 'file:/C:/Users/01ism/OneDrive/Desktop/TP_Oral/AGENDA_V0/gestion_agenda_v1.vxml', line 22; Cannot load grammar 'file:/C:/Users/01ism/OneDrive/Desktop/TP_Oral/AGENDA_V0/grammaire_sortie.grxml' since an error occurred in call to Resource Loader. Resource Loader reports: Cannot open stream. since an error occurred in call to file stream. file stream reports: Cannot open file "C:/Users/01ism/OneDrive/Desktop/TP_Oral/AGENDA_V0/grammaire_sortie.grxml".
+

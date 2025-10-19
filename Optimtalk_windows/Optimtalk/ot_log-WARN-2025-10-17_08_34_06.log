@@ -1,0 +1,11 @@
+Created from template: |append [ot_log-WARN-%y-%m-%d_%H_%M_%s.log] 
+Number of records: unlimited
+Lifetime: unlimited
+Log format:
+date time severity {session id} <category> [source]
+label: message
+===================================================
+
+2025-Oct-17 08:34:06.780 WARN {vxmlDialog_0} <Alarm> [VoiceXML interpreter]
+optimtalk.interpretationError: The following error occurred during the interpretation: A VoiceXML event 'error.badfetch' was generated during preparing of a VoiceXML document. The following message was associated with the event: Cannot load document 'file:/C:/Users/01ism/OneDrive/Desktop/TP_Oral/AGENDA_V0/test_gram.vxml' since an error occurred in call to Resource Loader. Resource Loader reports: Cannot open stream. since an error occurred in call to file stream. file stream reports: Cannot open file "C:/Users/01ism/OneDrive/Desktop/TP_Oral/AGENDA_V0/test_gram.vxml".
+

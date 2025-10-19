@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar version="1.0" root="horaire" xml:lang="fr">
+
+<meta name="description" content="grammaire horaire"/>
+<meta name="author" content="TP Dialogue"/>
+<meta name="copyright" content="free for any purpose"/>
+
+<rule id="horaire" scope="public">
+<one-of>
+     <item> 
+        <ruleref uri="#heure_base" />
+        <ruleref uri="#modificateur" />
+        <tag> 
+            out.H = rules.heure_base.H + rules.modificateur.delta_H ;
+            out.MN = rules.modificateur.MN ; 
+            out.NTOT_MIN = out.H * 60 + out.MN ;
+            out.text = meta.heure_base.text + meta.modificateur.text
+        </tag>
+     </item>
+     
+     <item> 
+        <ruleref uri="#heure_base" />
+        <ruleref uri="grammaire_nombre_v3.grxml#nombre" />
+        <tag> 
+            out.H = rules.heure_base.H ;
+            out.MN = rules.nombre.nb ;
+            out.NTOT_MIN = out.H * 60 + out.MN ;
+            out.text = meta.heure_base.text + " " + meta.nombre.text
+        </tag>
+     </item>
+     
+     <item> 
+        <ruleref uri="#heure_base" />
+        moins
+        <ruleref uri="grammaire_nombre_v3.grxml#nombre" />
+        <tag> 
+            out.H = rules.heure_base.H - 1 ;
+            out.MN = 60 - rules.nombre.nb ; 
+            out.NTOT_MIN = out.H * 60 + out.MN ;
+            out.text = meta.heure_base.text + " moins " + meta.nombre.text
+        </tag>
+     </item>
+     
+     <item> 
+        <ruleref uri="#heure_base" />
+        <tag> 
+            out.H = rules.heure_base.H ;
+            out.MN = 0 ;
+            out.NTOT_MIN = out.H * 60 ;
+            out.text = meta.heure_base.text
+        </tag>
+     </item>
+</one-of>
+</rule>
+
+<rule id="heure_base">
+<one-of>
+    
+     <item>
+        une heure
+        <tag> 
+            out.H = 1 ;
+            out.text = "une heure" 
+        </tag>
+     </item>
+     <item>
+        vingt et une heures
+        <tag> 
+            out.H = 21 ;
+            out.text = "vingt et une heures" 
+        </tag>
+     </item>
+     <item>
+        trente et une heures
+        <tag> 
+            out.H = 31 ;
+            out.text = "trente et une heures" 
+        </tag>
+     </item>
+     <item>
+        quarante et une heures
+        <tag> 
+            out.H = 41 ;
+            out.text = "quarante et une heures" 
+        </tag>
+     </item>
+     <item>
+        cinquante et une heures
+        <tag> 
+            out.H = 51 ;
+            out.text = "cinquante et une heures" 
+        </tag>
+     </item>
+     <item>
+        soixante et une heures
+        <tag> 
+            out.H = 61 ;
+            out.text = "soixante et une heures" 
+        </tag>
+     </item>
+     <item>
+        quatre vingt une heures
+        <tag> 
+            out.H = 81 ;
+            out.text = "quatre vingt une heures" 
+        </tag>
+     </item>
+     <item> 
+        <ruleref uri="grammaire_nombre_v3.grxml#nombre" />
+        <one-of>
+            <item> heure </item>
+            <item> heures </item>
+        </one-of>
+         <tag> 
+            out.H = rules.nombre.nb ;
+            out.text = meta.nombre.text + " " + meta.current().text 
+        </tag>
+     </item>
+     
+     <item> 
+        midi
+        <tag> 
+            out.H = 12 ;
+            out.text = "midi"
+        </tag>
+     </item>
+     
+     <item> 
+        minuit
+        <tag> 
+            out.H = 0 ;
+            out.text = "minuit"
+        </tag>
+     </item>
+</one-of>
+</rule>
+
+<rule id="modificateur">
+<one-of>
+     <item> 
+        et quart
+        <tag> 
+            out.delta_H = 0 ;
+            out.MN = 15 ;
+            out.text = " et quart" 
+        </tag>
+     </item>
+     
+     <item> 
+        et 
+        <one-of>
+            <item> demi </item>
+            <item> demie </item>
+        </one-of>
+         <tag> 
+            out.delta_H = 0 ;
+            out.MN = 30 ;
+            out.text = " et demi"
+        </tag>
+     </item>
+     
+     <item> 
+        moins le quart
+        <tag> 
+            out.delta_H = -1 ;
+            out.MN = 45 ;
+            out.text = " moins le quart" 
+        </tag>
+     </item>
+</one-of>
+</rule>
+
+</grammar>

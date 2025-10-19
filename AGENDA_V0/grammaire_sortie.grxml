@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar version="1.0" root="sortie" xml:lang="fr">
+
+<meta name="description" content="grammaire pour sortir de l'application"/>
+<meta name="author" content="Ton nom"/>
+<meta name="copyright" content="free for any purpose"/>
+
+  <rule id="sortie" scope="public">
+    <one-of>
+      <item>sortir</item>
+      <item>quitter</item>
+      <item>sortie</item>
+      <item>au revoir</item>
+      <item>terminer</item>
+      <item>annuler</item>
+      <item>stop</item>
+    </one-of>
+  </rule>
+</grammar>

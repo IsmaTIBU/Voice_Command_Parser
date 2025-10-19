@@ -1,0 +1,283 @@
+une heure
+Semantic result: {
+  H: 1,
+  MN: 0,
+  NTOT_MIN: 60,
+  text: "une heure"
+}
+Enter an utternace or press Enter to finish:
+une heure dix
+Semantic result: {
+  H: 1,
+  MN: 10,
+  NTOT_MIN: 70,
+  text: "une heure dix"
+}
+Enter an utternace or press Enter to finish:
+deux heures et quart
+Semantic result: {
+  H: 2,
+  MN: 15,
+  NTOT_MIN: 135,
+  text: "deux heureset quart"
+}
+Enter an utternace or press Enter to finish:
+trois heures vingt cinq
+Semantic result: {
+  H: 3,
+  MN: 25,
+  NTOT_MIN: 205,
+  text: "trois heures vingt cinq"
+}
+Enter an utternace or press Enter to finish:
+quatre heures trente
+Semantic result: {
+  H: 4,
+  MN: 30,
+  NTOT_MIN: 270,
+  text: "quatre heures trente"
+}
+Enter an utternace or press Enter to finish:
+cinq heures moins vingt cinq
+Semantic result: {
+  H: 4,
+  MN: 35,
+  NTOT_MIN: 275,
+  text: "cinq heures moins vingt cinq"
+}
+Enter an utternace or press Enter to finish:
+six heures moins le quart
+Semantic result: {
+  H: 5,
+  MN: 45,
+  NTOT_MIN: 345,
+  text: "six heuresmoins le quart"
+}
+Enter an utternace or press Enter to finish:
+sept heures quarante cinq
+Semantic result: {
+  H: 7,
+  MN: 45,
+  NTOT_MIN: 465,
+  text: "sept heures quarante cinq"
+}
+Enter an utternace or press Enter to finish:
+huit heures moins douze
+Semantic result: {
+  H: 7,
+  MN: 48,
+  NTOT_MIN: 468,
+  text: "huit heures moins douze"
+}
+Enter an utternace or press Enter to finish:
+neuf heures moins cinq
+Semantic result: {
+  H: 8,
+  MN: 55,
+  NTOT_MIN: 535,
+  text: "neuf heures moins cinq"
+}
+Enter an utternace or press Enter to finish:
+midi
+Semantic result: {
+  H: 12,
+  MN: 0,
+  NTOT_MIN: 720,
+  text: "midi"
+}
+Enter an utternace or press Enter to finish:
+midi et quart
+Semantic result: {
+  H: 12,
+  MN: 15,
+  NTOT_MIN: 735,
+  text: "midiet quart"
+}
+Enter an utternace or press Enter to finish:
+midi et demi
+Semantic result: {
+  H: 12,
+  MN: 30,
+  NTOT_MIN: 750,
+  text: "midiet demi"
+}
+Enter an utternace or press Enter to finish:
+midi moins le quart
+Semantic result: {
+  H: 11,
+  MN: 45,
+  NTOT_MIN: 705,
+  text: "midimoins le quart"
+}
+Enter an utternace or press Enter to finish:
+dix heure trente
+Semantic result: {
+  H: 10,
+  MN: 30,
+  NTOT_MIN: 630,
+  text: "dix heure trente"
+}
+Enter an utternace or press Enter to finish:
+onze heures cinq
+Semantic result: {
+  H: 11,
+  MN: 5,
+  NTOT_MIN: 665,
+  text: "onze heures cinq"
+}
+Enter an utternace or press Enter to finish:
+douze heures cinquante cinq
+Semantic result: {
+  H: 12,
+  MN: 55,
+  NTOT_MIN: 775,
+  text: "douze heures cinquante cinq"
+}
+Enter an utternace or press Enter to finish:
+treize heures trente
+Semantic result: {
+  H: 13,
+  MN: 30,
+  NTOT_MIN: 810,
+  text: "treize heures trente"
+}
+Enter an utternace or press Enter to finish:
+quatorze heures
+Semantic result: {
+  H: 14,
+  MN: 0,
+  NTOT_MIN: 840,
+  text: "quatorze heures"
+}
+Enter an utternace or press Enter to finish:
+quinze heures quarante
+Semantic result: {
+  H: 15,
+  MN: 40,
+  NTOT_MIN: 940,
+  text: "quinze heures quarante"
+}
+Enter an utternace or press Enter to finish:
+seize heures cinq
+Semantic result: {
+  H: 16,
+  MN: 5,
+  NTOT_MIN: 965,
+  text: "seize heures cinq"
+}
+Enter an utternace or press Enter to finish:
+dix sept heures dix sept
+Semantic result: {
+  H: 17,
+  MN: 17,
+  NTOT_MIN: 1037,
+  text: "dix sept heures dix sept"
+}
+Enter an utternace or press Enter to finish:
+dix huit heure
+Semantic result: {
+  H: 18,
+  MN: 0,
+  NTOT_MIN: 1080,
+  text: "dix huit heure"
+}
+Enter an utternace or press Enter to finish:
+vingt heures vingt deux
+Semantic result: {
+  H: 20,
+  MN: 22,
+  NTOT_MIN: 1222,
+  text: "vingt heures vingt deux"
+}
+Enter an utternace or press Enter to finish:
+vingt et une heures onze
+Semantic result: {
+  H: 21,
+  MN: 11,
+  NTOT_MIN: 1271,
+  text: "vingt et une heures onze"
+}
+Enter an utternace or press Enter to finish:
+vingt deux heures seize
+Semantic result: {
+  H: 22,
+  MN: 16,
+  NTOT_MIN: 1336,
+  text: "vingt deux heures seize"
+}
+Enter an utternace or press Enter to finish:
+vingt trois heures moins dix
+Semantic result: {
+  H: 22,
+  MN: 50,
+  NTOT_MIN: 1370,
+  text: "vingt trois heures moins dix"
+}
+Enter an utternace or press Enter to finish:
+vingt quatre heures dix
+Semantic result: {
+  H: 24,
+  MN: 10,
+  NTOT_MIN: 1450,
+  text: "vingt quatre heures dix"
+}
+Enter an utternace or press Enter to finish:
+minuit
+Semantic result: {
+  H: 0,
+  MN: 0,
+  NTOT_MIN: 0,
+  text: "minuit"
+}
+Enter an utternace or press Enter to finish:
+minuit et quart
+Semantic result: {
+  H: 0,
+  MN: 15,
+  NTOT_MIN: 15,
+  text: "minuitet quart"
+}
+Enter an utternace or press Enter to finish:
+minuit moins trois
+Semantic result: {
+  H: -1,
+  MN: 57,
+  NTOT_MIN: -3,
+  text: "minuit moins trois"
+}
+Enter an utternace or press Enter to finish:
+minuit vingt cinq
+Semantic result: {
+  H: 0,
+  MN: 25,
+  NTOT_MIN: 25,
+  text: "minuit vingt cinq"
+}
+Enter an utternace or press Enter to finish:
+trente heures dix
+Semantic result: {
+  H: 30,
+  MN: 10,
+  NTOT_MIN: 1810,
+  text: "trente heures dix"
+}
+Enter an utternace or press Enter to finish:
+soixante quinze heures cent cinquante huit
+Semantic result: {
+  H: 75,
+  MN: 158,
+  NTOT_MIN: 4658,
+  text: "soixante quinze heures cent cinquante huit"
+}
+Enter an utternace or press Enter to finish:
+dans une heure
+DOES NOT MATCH
+Enter an utternace or press Enter to finish:
+trente heures et quarante minutes
+DOES NOT MATCH
+Enter an utternace or press Enter to finish:
+a dix-neuf heures moins cinquante-deux
+DOES NOT MATCH
+Enter an utternace or press Enter to finish:
+a dix-neuf heures cinquante-deux
+DOES NOT MATCH
