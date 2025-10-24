@@ -37,7 +37,7 @@
             out.H = rules.heure_base.H - 1 ;
             out.MN = 60 - rules.nombre.nb ; 
             out.NTOT_MIN = out.H * 60 + out.MN ;
-            out.text = meta.heure_base.text + " moins " + meta.nombre.text
+            out.text = meta.heure_base.text + "moins " + meta.nombre.text
         </tag>
      </item>
      
@@ -113,7 +113,7 @@
         </one-of>
          <tag> 
             out.H = rules.nombre.nb ;
-            out.text = meta.nombre.text + " " + meta.current().text 
+            out.text = meta.nombre.text + meta.current().text + " "
         </tag>
      </item>
      
@@ -142,7 +142,7 @@
         <tag> 
             out.delta_H = 0 ;
             out.MN = 15 ;
-            out.text = " et quart" 
+            out.text = "et quart" 
         </tag>
      </item>
      
@@ -155,7 +155,7 @@
          <tag> 
             out.delta_H = 0 ;
             out.MN = 30 ;
-            out.text = " et demi"
+            out.text = "et demi"
         </tag>
      </item>
      
@@ -164,7 +164,7 @@
         <tag> 
             out.delta_H = -1 ;
             out.MN = 45 ;
-            out.text = " moins le quart" 
+            out.text = "moins le quart" 
         </tag>
      </item>
 </one-of>
